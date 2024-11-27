@@ -11,14 +11,14 @@ vanus=int(input("Kui vana sa oled? "))
 print("Tere tulemast! Tervitan sind "+nimi+" Sa oled ",vanus,"aastad vana")
 print(f"\tTere tulemast! \nTervitan sind {nimi} Sa oled {vanus} aastad vana")
 
-# #Ülesane 2
+#Ülesane 2
 vanus = 18
 eesnimi = "zenja"
 pikkus = 178
 kas_käib_koolis = True
 print(type(vanus),(eesnimi),(pikkus),(kas_käib_koolis))
 
-# #Ülesane 3
+#Ülesane 3
 kokku=randint(1,1000)
 print(f"kokku on {kokku} kommi")
 kommi=int(input("Mitu kommi sa tahad? "))
