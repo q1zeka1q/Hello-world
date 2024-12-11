@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Valiklaused (Ruutvõrrand).py</StartupFile>
+    <StartupFile>10 практических заданий по теме Циклы.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="10 практических заданий по теме Циклы.py" />
     <Compile Include="Hello_world.py" />
     <Compile Include="Tund2%28datetime_try_exept%29.py" />
     <Compile Include="Tund3.py" />
