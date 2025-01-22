@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>isikukood.py</StartupFile>
+    <StartupFile>Tund(def).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,9 +26,11 @@
     <Compile Include="isikukood.py" />
     <Compile Include="Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
     <Compile Include="Praktiline töö Matemaatika.py" />
+    <Compile Include="Tund%28def%29.py" />
     <Compile Include="Tund2%28datetime_try_exept%29.py" />
     <Compile Include="Tund3.py" />
     <Compile Include="tund6.py" />
+    <Compile Include="tund7modul.py" />
     <Compile Include="Töö Vigade otsing 2 Sirakus.py" />
     <Compile Include="Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="Vigade otsing.py" />
