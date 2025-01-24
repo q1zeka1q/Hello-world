@@ -116,7 +116,7 @@ def date(päev: int, kuu: int, aasta: int) -> bool:
     """
     if päev in range(1, 31) and kuu in [1, 3, 5, 7, 8, 10, 12]:
         v = True
-    elif päev in range(1, 29) and kuu == 2 and is_year_leap(aasta):  # ещё одно условие
+    elif päev in range(1, 29) and kuu == 2 and is_year_leap(aasta):  
         v = True
     elif päev in range(1, 30) and kuu in [4, 6, 9, 11]:
         v = True
