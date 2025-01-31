@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>isikukood.py</StartupFile>
+    <StartupFile>põhiprogrammi.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,8 +25,10 @@
     <Compile Include="Hello_world.py" />
     <Compile Include="isikukood%28def%29.py" />
     <Compile Include="isikukood.py" />
+    <Compile Include="MyModule.py" />
     <Compile Include="Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
     <Compile Include="Praktiline töö Matemaatika.py" />
+    <Compile Include="põhiprogrammi.py" />
     <Compile Include="Tund%28def%29.py" />
     <Compile Include="Tund2%28datetime_try_exept%29.py" />
     <Compile Include="Tund3.py" />
