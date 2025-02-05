@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>põhiprogrammi.py</StartupFile>
+    <StartupFile>isikukood.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
