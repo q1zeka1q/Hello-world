@@ -1,8 +1,9 @@
 import random
 import string
 
-kasutajanimed = []
-paroolid = []
+# Alguses täidetud kasutajate ja paroolide nimekirjad
+kasutajad = ["kasutaja1", "kasutaja2"]
+paroolid = ["Parool123!", "Salasona456*"]
 
 def kasutaja_haldus(tegevus):
     if tegevus == "registreeri":
