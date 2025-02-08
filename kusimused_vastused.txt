@@ -1,0 +1,10 @@
+Mis on for-tsükkel?:kordamine
+Mis on muutuja?:andmete hoidmise koht
+Mis on funktsioon?:koodilõik kindla ülesande täitmiseks
+Mis keel on kasutusel veebiarenduses?:HTML
+Mis on klass Pythoni keeles?:objektide loomise mall
+Mis on string?:tekstiline andmetüüp
+Mis on Pythoni laiend?:py
+Mis on andmebaas?:andmete salvestamise koht
+Mis on JSON?:andmevahetusformaat
+Mis on Git?:versioonihaldussüsteem
