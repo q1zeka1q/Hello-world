@@ -1,87 +1,99 @@
-ikoodid = [] 
-arvud = [] 
+from datetime import *
 
-haiglad = {
-    range(1, 11): "Kuressaare Haigla",
-    range(11, 20): "Tartu Ülikooli Naistekliinik, Tartumaa, Tartu",
-    range(21, 221): "Ida-Tallinna Keskhaigla, Pelgulinna sünnitusmaja, Hiiumaa, Keila, Rapla haigla, Loksa haigla",
-    range(221, 271): "Ida-Viru Keskhaigla (Kohtla-Järve, endine Jõhvi)",
-    range(271, 371): "Maarjamõisa Kliinikum (Tartu), Jõgeva Haigla", 
-    range(371, 421): "Narva Haigla",
-    range(421, 471): "Pärnu Haigla",
-    range(471, 491): "Pelgulinna Sünnitusmaja (Tallinn), Haapsalu haigla",
-    range(491, 521): "Järvamaa Haigla (Paide)",
-    range(521, 571): "Rakvere, Tapa haigla",
-    range(571, 601): "Valga Haigla",
-    range(601, 651): "Viljandi Haigla",
-    range(651, 701): "Lõuna-Eesti Haigla (Võru), Põlva Haigla"
-}
-def kontrollnumber(code):  
-    astme_kaal1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
-    astme_kaal2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
 
-    sum1 = sum(int(code[i]) * astme_kaal1[i] for i in range(10))
-    ule_osa1 = sum1 % 11
+def kontroll_pikkus(ikood:str)->bool:
+    """Kontrollib, kas isikukood on õige pikkusega.
+    :param str ikood: Isikukood
+    :rtype: bool
+    """
+    return len(ikood)==11
 
-    if ule_osa1 != 10:
-        return ule_osa1
+def kontroll_esimene_arv(ikood:str)->bool:
+    """Kontrollib, kas isikukoodi esimene number on lubatud.
+    :param str ikood: Isikukood
+    :rtype: bool
+    """
+    esimene_arv=int(ikood[0])
 
-    sum2 = sum(int(code[i]) * astme_kaal2[i] for i in range(10))
-    ule_osa2 = sum2 % 11
+    return esimene_arv in {1,2,3,4,5,6}
 
-    return ule_osa2 if ule_osa2 != 10 else 0
+def leia_synniaeg(ikood: str)->any:
+    """Leiab sünnikuupäeva isikukoodist.
+    :param str ikood: Isikukood
+    :rtype: tuple
+    """
+    esimene_arv=int(ikood[0])
+    aasta=int(ikood[1:3])+(1800 if esimene_arv in {1,2} else 1900 if esimene_arv in {3,4} else 2000)
+    kuu=int(ikood[3:5])
+    paev=int(ikood[5:7])
 
-def hoiused(number):
-    for range_key, place in haiglad.items():
-        if number in range_key:
-            return place
-    return "Tundmatu koht"
+    return aasta,kuu,paev
 
-def isikukood(code): 
-    if len(code) != 11 or not code.isdigit():
-        return False
-
-    if int(code[0]) not in range(1, 7):
-        return False
-
-    aastal = 1800 + ((int(code[0]) - 1) // 2) * 100
-    year = aastal + int(code[1:3])
-    month = int(code[3:5])
-    day = int(code[5:7])
-
+def kontroll_synniaeg(aasta:int,kuu:int,paev:int)->bool:
+    """Kontrollib, kas sünnikuupäev on kehtiv ja mitte tulevikus.
+    :param int aasta: Aasta
+    :param int kuu: Kuu
+    :param int paev: Päev
+    :rtype: bool
+    """
     try:
-        from datetime import datetime
-        datetime(year, month, day)
-    except ValueError:
+        synniaeg=datetime(aasta,kuu,paev)
+        return synniaeg<=datetime.now()
+    except:
         return False
 
-    lnumber = int(code[7:10])
-    control = kontrollnumber(code)
+def leia_kontroll_nr(ikood:str)->int:
+    """Arvutab isikukoodi kontrollnumbri.
+    :param str ikood: Isikukood
+    :rtype: int
+    """
+    astme_kaal_1=[1,2,3,4,5,6,7,8,9,1]
+    astme_kaal_2=[3,4,5,6,7,8,9,1,2,3]
 
-    return control == int(code[10])
+    astme_summa_1=sum(int(ikood[i])*astme_kaal_1[i] for i in range (10))
+    jaak=astme_summa_1%11  
 
-while True:
-    code = input("Sisestage isikukood või 'STOP' lõpetamiseks: ")
-    if code.strip().upper() == "STOP":
-        break
+    if jaak==10:  
+        astme_summa_2=sum(int(ikood[i])*astme_kaal_2[i] for i in range (10)) 
+        jaak=astme_summa_2%11    
+        if jaak==10: 
+            jaak=0  
+    return jaak
 
-    if isikukood(code):
-        gender = "naine" if int(code[0]) % 2 == 0 else "mees"
-        aastal = 1800 + ((int(code[0]) - 1) // 2) * 100
-        year = aastal + int(code[1:3])
-        month = int(code[3:5])
-        day = int(code[5:7])
-        lnumber = int(code[7:10])
-        place = hoiused(lnumber)
+def leia_sunnikoht(sunnikoht_num:int)->str:
+    """Määrab sünnikoha isikukoodi järgi.
+    :param int sünnikoht_num: Isikukoodi sünnikoha osa
+    :rtype: str
+    """
+    haiglad=[
+            [1,10,"Kuressaare Haigla"],
+            [11,19,"Tartu Ülikooli Naistekliinik, Tartumaa, Tartu"],
+            [21,220,"Ida-Tallinna Keskhaigla, Pelgulinna sünnitusmaja, Hiiumaa, Keila, Rapla haigla, Loksa haigla"],
+            [221,270,"Ida-Viru Keskhaigla (Kohtla-Järve, endine Jõhvi)"],
+            [271,370,"Maarjamõisa Kliinikum (Tartu), Jõgeva Haigla"],
+            [371,420,"Narva Haigla"],
+            [421,470,"Pärnu Haigla"],
+            [471,490,"Pelgulinna Sünнitusmaja (Tallinn), Haapsalu haigla"],
+            [491,520,"Järvamaa Haigla (Paide)"],
+            [521,570,"Rakvere, Tapa haigla"],
+            [571,600,"Valga Haigla"],
+            [601,650,"Viljandi Haigla"],
+            [651,700,"Lõuna-Eesti Haigla (Võru), Põlva Haigla"]
+    ]
+    for alg,lopp,koht in haiglad:
+        if alg<=sunnikoht_num<=lopp:
+            return koht
+    return "Tundmatu sünnikoht"
 
-        ikoodid.append(code)
-        print(f"See on {gender}, tema sünnipäev on {day:02}.{month:02}.{year}, sünnikoht on {place}.")
+def leia_sugu(ikood:int)->str:
+    """Määrab isiku soo.
+    :param str ikood: Isikukood
+    :rtype: str
+    """
+    esimene_arv=int(ikood[0])
+    if esimene_arv in {1,3,5}:
+        sugu="mees"
     else:
-        arvud.append(code)
-        print("Vigane isikukood.")
+        sugu="naine"
 
-    ikoodid_sorted = sorted(ikoodid)
-    arvud_sorted = sorted(arvud)
-
-    print("\nKorrektseid koode:", ikoodid_sorted)
-    print("Vigaseid koode:", arvud_sorted)
+    return sugu
