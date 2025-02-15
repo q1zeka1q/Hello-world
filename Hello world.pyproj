@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Aut_Reg.py</StartupFile>
+    <StartupFile>modul(Europa riigid).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,17 +29,20 @@
     <Compile Include="isikukooddef2.py" />
     <Compile Include="isikukoodilmadef.py" />
     <Compile Include="MinuOmaMoodul.py" />
+    <Compile Include="modul%28Europa riigid%29.py" />
     <Compile Include="MyModule.py" />
     <Compile Include="Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
     <Compile Include="Praktiline töö Matemaatika.py" />
     <Compile Include="Praktiline töö.py" />
     <Compile Include="põhiprogrammi.py" />
     <Compile Include="Tund%28def%29.py" />
+    <Compile Include="tund%28sõnastikud%29.py" />
     <Compile Include="tund%28töö failidega%29.py" />
     <Compile Include="Tund2%28datetime_try_exept%29.py" />
     <Compile Include="Tund3.py" />
     <Compile Include="tund6.py" />
     <Compile Include="tund7modul.py" />
+    <Compile Include="tund8_Euroopa_riigid.py" />
     <Compile Include="Töö Vigade otsing 2 Sirakus.py" />
     <Compile Include="Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="Vigade otsing.py" />
@@ -48,6 +51,8 @@
   <ItemGroup>
     <Content Include="kasutajad.txt" />
     <Content Include="parolid.txt" />
+    <Content Include="riigid_pealinnad.txt" />
+    <Content Include="riigid_pealinnd.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
