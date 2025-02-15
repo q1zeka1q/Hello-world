@@ -62,8 +62,8 @@ def parandus(sõnastik, vana, uus, failinimi):
             del sõnastik[riik]  # del это инструментом для удаления записи.
             leidnud = True
             print(f"Parandatud riik: {riik} -> {uus}")
-        elif pealinn.lower() == vana.lower():
-            sõnastik[riik] = uus
+        elif pealinn.lower() == vana.lower():    # Если столица совпадает с "vana"
+            sõnastik[riik] = uus # Обновляем столицу для соответствующей страны
             leidnud = True
             print(f"Parandatud pealinn: {pealinn} -> {uus}")
     
