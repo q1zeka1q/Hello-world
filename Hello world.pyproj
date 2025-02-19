@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>modul(Europa riigid).py</StartupFile>
+    <StartupFile>tkinter(tund9).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,7 @@
     <Compile Include="Praktiline töö Matemaatika.py" />
     <Compile Include="Praktiline töö.py" />
     <Compile Include="põhiprogrammi.py" />
+    <Compile Include="tkinter%28tund9%29.py" />
     <Compile Include="Tund%28def%29.py" />
     <Compile Include="tund%28sõnastikud%29.py" />
     <Compile Include="tund%28töö failidega%29.py" />
@@ -43,6 +44,7 @@
     <Compile Include="tund6.py" />
     <Compile Include="tund7modul.py" />
     <Compile Include="tund8_Euroopa_riigid.py" />
+    <Compile Include="tund9Graafilineliides.py" />
     <Compile Include="Töö Vigade otsing 2 Sirakus.py" />
     <Compile Include="Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="Vigade otsing.py" />
