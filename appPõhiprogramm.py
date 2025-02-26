@@ -1,6 +1,7 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import Label, messagebox
 import app  
+from PIL import Image, ImageTk
 
 # Функция проверки полей
 def kontrolli_andmeid():
@@ -47,11 +48,21 @@ def joonista():
 root = tk.Tk()
 root.title("Ruutvõrrandi lahendamine")
 root.geometry("500x400")
-root.configure(bg="lightgray")  
+root.configure(bg="lightgray") 
+root.resizable(False, False)
+
+# Загружаем и изменяем размер изображения
+original_image = Image.open(r"C:\Users\Admin\Desktop\visual studio работы\Hello world\foni-papik-pro-bqex-p-kartinki-kletochka-na-prozrachnom-fone-13.png")
+resized_image = original_image.resize((500, 400))  # Размер должен соответствовать окну
+bgimage = ImageTk.PhotoImage(resized_image)
+
+# Добавляем метку с фоновым изображением
+labelLBG = Label(root, image=bgimage)
+labelLBG.place(relwidth=1, relheight=1)  # Растягиваем фон на весь экран
 
 # Заголовок
 title_label = tk.Label(root, text="Ruutvõrrandi lahendamine", font=("Arial", 18, "bold"), fg="blue", bg="lightgray")
-title_label.grid(row=0, column=0, columnspan=5, pady=10)
+title_label.grid(row=0, column=0, columnspan=6, pady=10)
 
 # Поля для ввода a, b, c
 entry_a = tk.Entry(root, width=5, font=("Arial", 14))
@@ -64,8 +75,8 @@ entry_b.grid(row=1, column=2, padx=5)
 entry_c.grid(row=1, column=4, padx=5)
 
 # Добавляем текст между полями
-label_x2 = tk.Label(root, text="x**2  +", font=("Arial", 14), bg="lightgray")
-label_x = tk.Label(root, text="x  +", font=("Arial", 14), bg="lightgray")
+label_x2 = tk.Label(root, text="x** +", font=("Arial", 14), bg="lightgray")
+label_x = tk.Label(root, text="x +", font=("Arial", 14), bg="lightgray")
 label_eq = tk.Label(root, text="= 0", font=("Arial", 14), bg="lightgray")
 
 # Размещаем текст между полями

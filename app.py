@@ -22,7 +22,7 @@ def joonista_graafik(a, b, c):
     y = a*x**2 + b*x + c 
 
     plt.figure(figsize=(6, 4))  # Создаём окно для графика
-    plt.plot(x, y, label=f"{a}x² + {b}x + {c}")  # Рисуем параболу
+    plt.plot(x, y, label=f"{a}x** + {b}x + {c}")  # Рисуем параболу
     plt.axhline(0, color='black', linewidth=1)  # Горизонтальная линия
     plt.axvline(0, color='black', linewidth=1)  # Вертикальная линия
     plt.grid()  # Включаем сетку

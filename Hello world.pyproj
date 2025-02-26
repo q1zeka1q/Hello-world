@@ -37,6 +37,7 @@
     <Compile Include="Praktiline töö Matemaatika.py" />
     <Compile Include="Praktiline töö.py" />
     <Compile Include="põhiprogrammi.py" />
+    <Compile Include="ruutvorand_pack.py" />
     <Compile Include="tkinter%28tund9%29.py" />
     <Compile Include="Tund%28def%29.py" />
     <Compile Include="tund%28sõnastikud%29.py" />
@@ -53,6 +54,7 @@
     <Compile Include="блок схема.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="foni-papik-pro-bqex-p-kartinki-kletochka-na-prozrachnom-fone-13.png" />
     <Content Include="kasutajad.txt" />
     <Content Include="parolid.txt" />
     <Content Include="riigid_pealinnad.txt" />
