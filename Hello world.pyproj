@@ -31,8 +31,8 @@
     <Compile Include="tund7\isikukooddef2.py" />
     <Compile Include="tund8\isikukoodilmadef.py" />
     <Compile Include="tund8\MinuOmaMoodul.py" />
-    <Compile Include="tund7\modul%28Europa riigid%29.py" />
-    <Compile Include="tund8\MyModule.py" />
+    <Compile Include="tund8\modul%28Europa riigid%29.py" />
+    <Compile Include="tund7\MyModule.py" />
     <Compile Include="tund6\Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
     <Compile Include="tund4\Praktiline töö Matemaatika.py" />
     <Compile Include="tund4\Praktiline töö.py" />
