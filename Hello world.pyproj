@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>appPõhiprogramm.py</StartupFile>
+    <StartupFile>tund9\appPõhiprogramm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,44 +21,55 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="10 практических заданий по теме Циклы.py" />
-    <Compile Include="app.py" />
-    <Compile Include="appPõhiprogramm.py" />
-    <Compile Include="Aut_Reg.py" />
-    <Compile Include="Hello_world.py" />
-    <Compile Include="isikukood%28def%29.py" />
-    <Compile Include="isikukood.py" />
-    <Compile Include="isikukooddef2.py" />
-    <Compile Include="isikukoodilmadef.py" />
-    <Compile Include="MinuOmaMoodul.py" />
-    <Compile Include="modul%28Europa riigid%29.py" />
-    <Compile Include="MyModule.py" />
-    <Compile Include="Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
-    <Compile Include="Praktiline töö Matemaatika.py" />
-    <Compile Include="Praktiline töö.py" />
-    <Compile Include="põhiprogrammi.py" />
-    <Compile Include="ruutvorand_pack.py" />
-    <Compile Include="tkinter%28tund9%29.py" />
-    <Compile Include="Tund%28def%29.py" />
-    <Compile Include="tund%28sõnastikud%29.py" />
-    <Compile Include="tund%28töö failidega%29.py" />
-    <Compile Include="Tund2%28datetime_try_exept%29.py" />
-    <Compile Include="Tund3.py" />
-    <Compile Include="tund6.py" />
-    <Compile Include="tund7modul.py" />
-    <Compile Include="tund8_Euroopa_riigid.py" />
-    <Compile Include="tund9Graafilineliides.py" />
-    <Compile Include="Töö Vigade otsing 2 Sirakus.py" />
-    <Compile Include="Valiklaused %28Ruutvõrrand%29.py" />
-    <Compile Include="Vigade otsing.py" />
-    <Compile Include="блок схема.py" />
+    <Compile Include="tund1\10 практических заданий по теме Циклы.py" />
+    <Compile Include="tund9\app.py" />
+    <Compile Include="tund9\appPõhiprogramm.py" />
+    <Compile Include="tund8\Aut_Reg.py" />
+    <Compile Include="tund1\Hello_world.py" />
+    <Compile Include="tund8\isikukood%28def%29.py" />
+    <Compile Include="tund7\isikukood.py" />
+    <Compile Include="tund7\isikukooddef2.py" />
+    <Compile Include="tund8\isikukoodilmadef.py" />
+    <Compile Include="tund8\MinuOmaMoodul.py" />
+    <Compile Include="tund7\modul%28Europa riigid%29.py" />
+    <Compile Include="tund8\MyModule.py" />
+    <Compile Include="tund6\Praktiline töö 1 Sõne ja järjesti funktsioonid.py" />
+    <Compile Include="tund4\Praktiline töö Matemaatika.py" />
+    <Compile Include="tund4\Praktiline töö.py" />
+    <Compile Include="tund8\põhiprogrammi.py" />
+    <Compile Include="tund9\ruutvorand_pack.py" />
+    <Compile Include="tund9\tkinter%28tund9%29.py" />
+    <Compile Include="tund7\Tund%28def%29.py" />
+    <Compile Include="tund5\tund%28sõnastikud%29.py" />
+    <Compile Include="tund5\tund%28töö failidega%29.py" />
+    <Compile Include="tund2\Tund2%28datetime_try_exept%29.py" />
+    <Compile Include="tund3\Tund3.py" />
+    <Compile Include="tund6\tund6.py" />
+    <Compile Include="tund7\tund7modul.py" />
+    <Compile Include="tund8\tund8_Euroopa_riigid.py" />
+    <Compile Include="tund9\tund9Graafilineliides.py" />
+    <Compile Include="tund3\Töö Vigade otsing 2 Sirakus.py" />
+    <Compile Include="tund2\Valiklaused %28Ruutvõrrand%29.py" />
+    <Compile Include="tund1\Vigade otsing.py" />
+    <Compile Include="tund1\блок схема.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="foni-papik-pro-bqex-p-kartinki-kletochka-na-prozrachnom-fone-13.png" />
-    <Content Include="kasutajad.txt" />
-    <Content Include="parolid.txt" />
-    <Content Include="riigid_pealinnad.txt" />
-    <Content Include="riigid_pealinnd.txt" />
+    <Content Include="tund8\kasutajad.txt" />
+    <Content Include="tund8\parolid.txt" />
+    <Content Include="tund8\riigid_pealinnad.txt" />
+    <Content Include="tund8\riigid_pealinnd.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tund7\" />
+    <Folder Include="tund6\" />
+    <Folder Include="tund5\" />
+    <Folder Include="tund8\" />
+    <Folder Include="tund9\" />
+    <Folder Include="tund4\" />
+    <Folder Include="tund3\" />
+    <Folder Include="tund2\" />
+    <Folder Include="tund1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
