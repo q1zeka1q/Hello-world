@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b49b0c47-9ef2-4264-8580-63a115b9492a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tund9\paremvariant.py</StartupFile>
+    <StartupFile>tund9\Praktiline_iseseisevtöö_Wordle_graafilise_kujundiga.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,6 +39,7 @@
     <Compile Include="Praktiline töö.py" />
     <Compile Include="põhiprogrammi.py" />
     <Compile Include="tund9\E-posti_klient_Minu_Oma_Outlook.py" />
+    <Compile Include="tund9\Praktiline_iseseisevtöö_Wordle_graafilise_kujundiga.py" />
     <Compile Include="tund9\ruutvorand_pack.py" />
     <Compile Include="tund9\tkinter%28tund9%29.py" />
     <Compile Include="Tund%28def%29.py" />
@@ -57,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="foni-papik-pro-bqex-p-kartinki-kletochka-na-prozrachnom-fone-13.png" />
+    <Content Include="tund9\graffiti-mauer-700-27783381.jpg" />
     <Content Include="kasutajad.txt" />
     <Content Include="parolid.txt" />
     <Content Include="riigid_pealinnad.txt" />
