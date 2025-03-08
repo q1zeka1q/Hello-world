@@ -1,0 +1,6 @@
+kassid
+mängud
+päike
+lumine
+soojus
+lilled
