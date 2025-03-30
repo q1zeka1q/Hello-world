@@ -1,0 +1,101 @@
+{
+    "õun": {
+        "ru": "яблоко",
+        "suhkur": 10.4,
+        "süsivesikud": 11.3,
+        "rasv": 0.2,
+        "soovitatav_max": 150,
+        "gi": 38,
+        "kcal": 52
+    },
+    "banaan": {
+        "ru": "банан",
+        "suhkur": 12.2,
+        "süsivesikud": 22.8,
+        "rasv": 0.3,
+        "soovitatav_max": 100,
+        "gi": 52,
+        "kcal": 89
+    },
+    "apelsin": {
+        "ru": "апельсин",
+        "suhkur": 8.3,
+        "süsivesikud": 11.8,
+        "rasv": 0.1,
+        "soovitatav_max": 150,
+        "gi": 42,
+        "kcal": 47
+    },
+    "porgand": {
+        "ru": "морковь",
+        "suhkur": 4.7,
+        "süsivesikud": 9.6,
+        "rasv": 0.2,
+        "soovitatav_max": 200,
+        "gi": 35,
+        "kcal": 41
+    },
+    "kartul": {
+        "ru": "картофель",
+        "suhkur": 0.8,
+        "süsivesikud": 17.0,
+        "rasv": 0.1,
+        "soovitatav_max": 250,
+        "gi": 82,
+        "kcal": 77
+    },
+    "brokoli": {
+        "ru": "брокколи",
+        "suhkur": 1.7,
+        "süsivesikud": 6.6,
+        "rasv": 0.4,
+        "soovitatav_max": 300,
+        "gi": 15,
+        "kcal": 34
+    },
+    "avokaado": {
+        "ru": "авокадо",
+        "suhkur": 0.7,
+        "süsivesikud": 8.5,
+        "rasv": 15.3,
+        "soovitatav_max": 100,
+        "gi": 10,
+        "kcal": 160
+    },
+    "kurk": {
+        "ru": "огурец",
+        "suhkur": 1.4,
+        "süsivesikud": 3.6,
+        "rasv": 0.1,
+        "soovitatav_max": 300,
+        "gi": 15,
+        "kcal": 16
+    },
+    "tomat": {
+        "ru": "помидор",
+        "suhkur": 2.6,
+        "süsivesikud": 3.9,
+        "rasv": 0.2,
+        "soovitatav_max": 250,
+        "gi": 30,
+        "kcal": 18
+    },
+    "sibul": {
+        "ru": "лук",
+        "suhkur": 4.2,
+        "süsivesikud": 9.3,
+        "rasv": 0.1,
+        "soovitatav_max": 200,
+        "gi": 30,
+        "kcal": 40
+    },
+    "kanafilee": {
+        "ru": "куриное филе",
+        "suhkur": 0.0,
+        "süsivesikud": 0.0,
+        "rasv": 1.5,
+        "soovitatav_max": 200,
+        "gi": 0,
+        "kcal": 110
+    }
+}

@@ -1,9 +1,3 @@
-import os
-from tkinter import *
-import smtplib, ssl, imghdr
-from email.message import EmailMessage
-from PIL import Image, ImageTk
-from tkinter import Tk, Label, Entry, Text, Button, filedialog, messagebox
 from string import *
 from time import sleep
 from os import path, remove, system
@@ -291,34 +285,3 @@ def vaheta_teema():
     dark_mode = not dark_mode
     root.configure(bg="#2E2E2E" if dark_mode else "white")
 dark_mode = False
-
-
-root = Tk()
-root.title("E-kirja saatmine")
-root.geometry("400x350")
-root.configure(bg="white")
-
-
-
-Label(root, text="EMAIL:", bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=10).grid(row=0, column=0, sticky="w", padx=5, pady=2)
-email_entry = Entry(root, width=40, bg="#eef5e2")
-email_entry.grid(row=0, column=1, pady=2)
-
-Label(root, text="TEEMA:", bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=10).grid(row=1, column=0, sticky="w", padx=5, pady=2)
-teema_entry = Entry(root, width=40, bg="#eef5e2")
-teema_entry.grid(row=1, column=1, pady=2)
-
-Label(root, text="LISA:", bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=10).grid(row=2, column=0, sticky="w", padx=5, pady=2)
-lisa_entry = Entry(root, width=40, bg="#eef5e2")
-lisa_entry.grid(row=2, column=1, pady=2)
-
-Label(root, text="KIRI:", bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=10).grid(row=3, column=0, sticky="w", padx=5, pady=2)
-kiri_box = Text(root, width=30, height=5, bg="#eef5e2")
-kiri_box.grid(row=3, column=1, pady=2)
-
-Button(root, text="LISA PILT", command=vali_pilt, bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=12).grid(row=4, column=0, pady=10)
-Button(root, text="SAADA", command=saada_kiri, bg="darkgreen", fg="white", font=("Arial", 10, "bold"), width=12).grid(row=4, column=1, pady=10)
-Button(root, text="Kustuta", command=puhasta_vorm, bg="darkred", fg="white", font=("Arial", 10, "bold"), width=12).grid(row=5, column=1, pady=10)
-Button(root, text="Teema", command=vaheta_teema, bg="gray", fg="white", font=("Arial", 10, "bold"), width=12).grid(row=5, column=0, pady=10)
-
-root.mainloop()

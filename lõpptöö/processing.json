@@ -1,0 +1,56 @@
+{
+    "õun": [
+        "keeta",
+        "aurutada",
+        "praadida",
+        "küpsetada"
+    ],
+    "banaan": [
+        "praadida",
+        "hautada",
+        "keeta",
+        "kuivatada"
+    ],
+    "apelsin": [
+        "süüa toorelt",
+        "lisada salatisse"
+    ],
+    "porgand": [
+        "keeta",
+        "aurutada",
+        "küpsetada",
+        "hautada"
+    ],
+    "kartul": [
+        "keeta",
+        "küpsetada",
+        "praadida"
+    ],
+    "brokoli": [
+        "aurutada",
+        "keeta"
+    ],
+    "avokaado": [
+        "süüa toorelt",
+        "lisada salatisse"
+    ],
+    "kurk": [
+        "süüa toorelt",
+        "lisada salatisse"
+    ],
+    "tomat": [
+        "keeta",
+        "praadida",
+        "hautada"
+    ],
+    "sibul": [
+        "praadida",
+        "hautada",
+        "keeta"
+    ],
+    "kanafilee": [
+        "praadida",
+        "hautada",
+        "keeta"
+    ]
+}
